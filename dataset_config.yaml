@@ -1,0 +1,13 @@
+KKBox_x1:
+    data_root: ../../../data/
+    data_format: csv
+    train_data: ../../../data/KKBox_x1/train.csv
+    valid_data: ../../../data/KKBox_x1/valid.csv
+    test_data: ../../../data/KKBox_x1/test.csv
+    min_categr_count: 1
+    feature_cols:
+        - { name: [ "msno","song_id","source_system_tab","source_screen_name","source_type","city","bd","gender",
+                    "registered_via","registration_init_time","expiration_date","song_length","genre_ids","artist_name",
+                    "composer","lyricist","language","name","isrc"],
+            active: True, dtype: str, type: categorical }
+    label_col: { name: label, dtype: float }
